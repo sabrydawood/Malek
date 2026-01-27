@@ -46,41 +46,48 @@
     </div>
     <!-- Positions -->
     <h2>Positions</h2>
-    <div style="position: inherit; display: flex; gap: 10px;">
-        <span style="position: inherit; top: 0; right: 0;">multi Positions : </span>
+    <div style="position: relative; display: flex; gap: 10px;">
+        <span style="position: absolute; top: 0;">multi Positions : </span>
         <ol>
             <li>
                 initial
-                ( بدون اي تعديلات يعني ما بيحركش العنصر من مكانه نهائيا)
+                <span style="color: lightcoral;"> ( بدون اي تعديلات يعني ما بيحركش العنصر من مكانه نهائيا)</span>
             </li>
             <li>
                 inherit
-                ( نظام وراثة)
+                <span style="color: lightcoral;"> ( نظام وراثة)</span>
             </li>
             <li>relative
-                <span dir="rtl">
+                <span dir="rtl" style="color: lightcoral;">
                     ( زي ال initial ولكن بيجبر اي عنصر ابن ليه واخد بوزشن absolute يفضل جواه )
                 </span>
             </li>
             <li>
                 absolute
-                <span dir="rtl">
+                <span dir="rtl" style="color: lightcoral;">
                     ( زي ال initial ولكن بيجبر اي عنصر ابن ليه واخد بوزشن absolute يفضل جواه )
                 </span>
             </li>
-            <li>fixed</li>
-            <li>sticky</li>
-            <li>static</li>
-            <li>static</li>
+            <li>
+                fixed
+                <span dir="rtl" style="color: lightcoral;">
+                    ده مالوش حد بيحكمه حتا لو الاب بتاعه واخد بوزيشن relative او absolute
+                </span>
+
+            </li>
+            <li>sticky
+                <span dir="rtl" style="color: lightcoral;">
+                    ده بيعمل ميكس بين fixed و initial بناءا علي حالة وجوده في الصفحة ( سيتم الشرح عملي افضل )
+                </span>
+
+            </li>
+            <li>static
+                <span dir="rtl" style="color: lightcoral;">
+                    نفس نظام ال initial وبس
+                </span>
+            </li>
         </ol>
     </div>
-    <center>
-        <p style=" font-weight: 700;">Lorem ipsum dolor sit amet,
-            <span style="color: blue;"> consectetur</span>
-            adipisicing elit. Ratione, consequuntur!
-        </p>
-    </center>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, consequuntur!</p>
 </body>
 
 </html>
