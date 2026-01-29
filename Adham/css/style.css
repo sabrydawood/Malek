@@ -1,0 +1,45 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    color     : #000000;
+}
+a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #000000;
+}
+.container {
+    width : 80%;
+    margin: 0 auto;
+    padding: 5px 10px;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.flex.center{
+    justify-content: center;
+}
+.flex.space-between{
+    justify-content: space-between;
+}
+.gap {
+    gap: 16px;
+}
+/*  NavBar */
+.navbar {
+    background: lightcoral;
+    color: #fff;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+}
+.logo {
+    width: 50px;
+}

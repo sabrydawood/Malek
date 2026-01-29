@@ -34,31 +34,77 @@
 
         .navbar {
             display: flex;
+            align-items: center;
+            justify-content: space-between;
             gap: 5px;
             background: rgb(155, 155, 255);
             padding: 10px 5px;
             /* positions */
-            position: initial; /* Initial Until Scroll  */
+            position: fixed;
             top: 0;
             width: 100%;
             height: 50px;
+            z-index: 1;
         }
 
-        /* .main-content {
-            margin-top: 50px;
-        } */
+        .initial {
+            position: initial;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .absolute {
+            position: absolute;
+        }
+
+        .fixed {
+            position: fixed;
+        }
+
+        .sticky {
+            /* position: fixed; */
+            top: 50px;
+            margin-top: 150px;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .Move {
+            position: -webkit-sticky;
+            background: red;
+            padding: 10px;
+            top: 50px;
+            left: 0;
+        }
+
+        .main-content {
+            margin: 50px 5px 0;
+        }
     </style>
 </head>
 
-<body>
+<body style="position: initial;">
     <!-- navbar -->
     <div class="navbar">
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Services</li>
-        </ul>
+        <div>
+            Malek WebSite
+        </div>
+       <div style="display: flex; width: 100%; justify-content: space-between;">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Services</li>
+            </ul>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Services</li>
+            </ul>
+       </div>
     </div>
     <!-- main Content -->
     <div class="main-content">
