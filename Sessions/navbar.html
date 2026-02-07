@@ -13,7 +13,7 @@
         }
 
         html {
-            background: #130707;
+            /* background: #130707; */
             color: #fff;
             position: initial;
         }
@@ -32,19 +32,27 @@
             border-radius: 5px;
         }
 
-        .navbar {
+        .navbar,
+        .footer {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 5px;
-            background: rgb(155, 155, 255);
-            padding: 10px 5px;
+            gap: 0.3125rem;
+            /* background: rgb(155, 155, 255); */
+            padding: 0.625rem 0.3125rem;
             /* positions */
             position: fixed;
-            top: 0;
             width: 100%;
-            height: 50px;
+            height: 3.125rem;
             z-index: 1;
+        }
+
+        .navbar {
+            top: 0;
+        }
+
+        .footer {
+            bottom: 0;
         }
 
         .initial {
@@ -79,35 +87,45 @@
             left: 0;
         }
 
+        body {
+            min-height: 100dvh;
+            background: url(https://img.freepik.com/free-photo/atuh-beach-sunrise-nusa-penida-bali-indonesia_335224-342.jpg?semt=ais_hybrid&w=740&q=80) no-repeat center;
+            /* background-image: url(https://img.freepik.com/free-photo/atuh-beach-sunrise-nusa-penida-bali-indonesia_335224-342.jpg?semt=ais_hybrid&w=740&q=80);
+            background-repeat: no-repeat;
+            background-position: center; */
+            background-size: cover; 
+        }
+
         .main-content {
-            margin: 50px 5px 0;
+            position: fixed;
+            top: 3.125rem;
+            color: #000;
+            /* top right bottom left */
+            /* top and Bottom - left and right */
+            max-height: calc(100vh - (3.125rem * 2));
+            min-height: calc(100vh - (3.125rem * 2));
+            overflow: auto;
         }
     </style>
 </head>
 
 <body style="position: initial;">
     <!-- navbar -->
-    <div class="navbar">
-        <div>
-            Malek WebSite
-        </div>
-       <div style="display: flex; width: 100%; justify-content: space-between;">
+    <header>
+        <nav class="navbar">
+            <div>
+                Malek WebSite
+            </div>
             <ul>
                 <li>Home</li>
                 <li>About</li>
                 <li>Contact</li>
                 <li>Services</li>
             </ul>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li>Services</li>
-            </ul>
-       </div>
-    </div>
+        </nav>
+    </header>
     <!-- main Content -->
-    <div class="main-content">
+    <main class="main-content">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae, porro tempore consequuntur repudiandae
         earum quam ipsa illum facilis omnis? Sequi voluptatem culpa in officiis magni deserunt voluptate unde aspernatur
         sint nostrum autem, illo inventore nulla laborum facere iste quasi ea explicabo odit dolorem expedita porro at
@@ -118,6 +136,7 @@
         voluptatibus voluptas architecto nostrum voluptates ad minus magni ullam aut, nihil distinctio ipsa! Labore
         delectus facilis obcaecati, eum explicabo vitae? Magnam molestiae aliquam tempore explicabo distinctio
         temporibus nostrum odit, in rerum architecto quaerat cupiditate vitae doloribus ipsam quis officia nulla labore
+
         quisquam sed et quibusdam vel. Aliquam maiores eaque expedita eius, illum quaerat porro non odio odit.
         Consequatur magnam dolores amet eaque quam dignissimos optio incidunt veniam sint obcaecati qui nobis nulla
         eligendi laudantium, quas voluptatum, pariatur at maiores ratione blanditiis, repellat ab reiciendis sit
@@ -136,7 +155,11 @@
         reprehenderit? Porro vitae odio quisquam fuga quaerat natus assumenda, ducimus quas ipsa quam dolorum modi
         expedita laborum doloribus! Quisquam, debitis eligendi? Consequatur eligendi debitis laboriosam? Nostrum
         sapiente ea veniam quae similique. Et adipisci soluta labore at aliquid! Hic eius, facere aliquam natus incidunt
-        sit aut. Numquam non totam voluptates doloremque nemo, quae sapiente libero quidem beatae nobis, aliquam
+        sit aut. Numquam non totam voluptates doloremque nemo,
+        <span style="background-color: blue; color: #000;">
+            Hello Am Sabry Dawood
+        </span>
+        libero quidem beatae nobis, aliquam
         expedita id distinctio recusandae, fugiat impedit optio ab amet. Illum, voluptates commodi! Voluptas ducimus
         quaerat sapiente sit aliquid, expedita ex exercitationem at placeat blanditiis optio? Omnis repellendus
         exercitationem dicta saepe sed hic esse velit, iure rem, atque maiores harum itaque voluptates fugiat expedita
@@ -205,7 +228,8 @@
         reprehenderit? Porro vitae odio quisquam fuga quaerat natus assumenda, ducimus quas ipsa quam dolorum modi
         expedita laborum doloribus! Quisquam, debitis eligendi? Consequatur eligendi debitis laboriosam? Nostrum
         sapiente ea veniam quae similique. Et adipisci soluta labore at aliquid! Hic eius, facere aliquam natus incidunt
-        sit aut. Numquam non totam voluptates doloremque nemo, quae sapiente libero quidem beatae nobis, aliquam
+        sit aut. Numquam non totam voluptates
+        libero quidem beatae nobis, aliquam
         expedita id distinctio recusandae, fugiat impedit optio ab amet. Illum, voluptates commodi! Voluptas ducimus
         quaerat sapiente sit aliquid, expedita ex exercitationem at placeat blanditiis optio? Omnis repellendus
         exercitationem dicta saepe sed hic esse velit, iure rem, atque maiores harum itaque voluptates fugiat expedita
@@ -246,11 +270,12 @@
         labore id exercitationem, hic reiciendis necessitatibus dolorum explicabo repudiandae sapiente repellendus fuga
         voluptas voluptatibus. Exercitationem incidunt, ducimus mollitia veniam expedita aliquid vitae ipsam repellat
         voluptate debitis molestias soluta, dolorum molestiae ratione adipisci quas earum. Quod, vel!
-    </div>
+
+    </main>
     <!-- footer -->
-    <div class="footer">
+    <footer class="footer">
         <h2>Footer</h2>
-    </div>
+    </footer>
 </body>
 
 </html>

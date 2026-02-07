@@ -3,32 +3,48 @@
     padding   : 0;
     box-sizing: border-box;
 }
+ 
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    background: #ffffff;
-    color     : #000000;
+    background: #05070a;
+    color     : #fff;
 }
 a {
     text-transform: capitalize;
     text-decoration: none;
     color: #000000;
 }
+
+.highlight {
+    background: #0000ff;
+    color: #000;
+    font-size: 16px;
+}
+
 .container {
     width : 80%;
     margin: 0 auto;
     padding: 5px 10px;
 }
+
 .flex {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 }
-.flex.center{
+.center{
     justify-content: center;
 }
-.flex.space-between{
+.space-between{
     justify-content: space-between;
 }
+.block {
+    display: block;
+}
+
 .gap {
     gap: 16px;
 }
@@ -39,7 +55,15 @@ a {
     display: flex;
     align-items: center ;
     justify-content: space-between;
+    height: 20%;
 }
 .logo {
     width: 50px;
 }
+
+.btn-red {
+    color: red; 
+    background: blue;
+     border: 1px solid red;
+}
+ 
